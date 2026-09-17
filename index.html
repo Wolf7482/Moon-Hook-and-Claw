@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moon, Hook, & Claw™</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0a0a0a;
+  color:white;
+  font-family:Segoe UI, sans-serif;
+  min-height:100vh;
+}
+
+.background-emblem{
+  position:fixed;
+  inset:0;
+  background:url('Logo.jpeg') center center no-repeat;
+  background-size:70%;
+  opacity:.20;
+  z-index:-1;
+}
+
+header{
+  padding:25px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 20px;
+  font-size:1.1rem;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#8B5CF6;
+}
+
+.hero{
+  min-height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+h1{
+  font-size:5rem;
+  background:linear-gradient(to right,#6BE675,#8B5CF6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+p{
+  margin-top:20px;
+  font-size:1.2rem;
+  max-width:800px;
+}
+
+@media(max-width:768px){
+  h1{
+    font-size:3rem;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="background-emblem"></div>
+
+<header>
+  <nav>
+    #Store</a>
+    #Blog</a>
+    #Inventory</a>
+    #Custom Page</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Moon, Hook, &amp; Claw™</h1>
+  <p>
+    Welcome to Moon, Hook, &amp; Claw™.
+  </p>
+</section>
+
+</body>
+</html>
