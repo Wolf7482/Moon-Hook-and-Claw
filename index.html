@@ -2,23 +2,16 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Moon, Hook, &amp; Claw™</title>
+<title>Moon, Hook, & Claw™</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet"
-href="https://fonts.googleapis.com">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&familyox-sizing:border-box;
 }
 
 body{
@@ -43,7 +36,7 @@ body{
     z-index:-1;
 }
 
-/* Navigation */
+/* Header */
 
 header{
     padding:25px;
@@ -68,7 +61,7 @@ nav a:hover{
     color:#8B5CF6;
 }
 
-/* Main Granite Monument */
+/* Hero */
 
 .hero{
     display:flex;
@@ -76,11 +69,14 @@ nav a:hover{
     padding:50px 20px;
 }
 
+/* Granite Monument */
+
 .about-box{
+
     width:90%;
     max-width:900px;
 
-    height:650px;
+    min-height:650px;
 
     padding:25px;
 
@@ -103,12 +99,13 @@ nav a:hover{
         0 15px 30px rgba(0,0,0,.7);
 }
 
-/* Moss Accent */
+/* Moss */
 
 .about-box::before{
     content:"";
 
     position:absolute;
+
     inset:0;
 
     border-radius:12px;
@@ -131,11 +128,12 @@ nav a:hover{
 /* Title */
 
 .about-box h1{
+
     font-family:'Fleur De Leah', cursive;
 
-    font-size:5rem;
-
     text-align:center;
+
+    font-size:6rem;
 
     margin-bottom:20px;
 
@@ -152,10 +150,11 @@ nav a:hover{
     -webkit-text-fill-color:transparent;
 }
 
-/* Carved Reading Area */
+/* Carved Reading Panel */
 
 .about-content{
-    height:480px;
+
+    max-height:450px;
 
     overflow-y:auto;
 
@@ -176,9 +175,10 @@ nav a:hover{
     margin-bottom:20px;
 }
 
-/* Feature Stone Boxes */
+/* Standing Stones */
 
 .feature-box{
+
     width:90%;
     max-width:900px;
 
@@ -187,6 +187,8 @@ nav a:hover{
     padding:25px;
 
     border-radius:12px;
+
+    text-align:center;
 
     background:
     linear-gradient(
@@ -201,8 +203,6 @@ nav a:hover{
         inset 3px 3px 5px rgba(255,255,255,.2),
         inset -5px -5px 8px rgba(0,0,0,.5),
         0 10px 20px rgba(0,0,0,.5);
-
-    text-align:center;
 }
 
 .feature-box h2{
@@ -231,8 +231,8 @@ footer{
 
 footer a{
     color:white;
-    text-decoration:none;
     margin:0 10px;
+    text-decoration:none;
 }
 
 footer a:hover{
@@ -241,22 +241,18 @@ footer a:hover{
 
 /* Mobile */
 
-@media (max-width:768px){
-
-    .about-box{
-        height:auto;
-    }
-
-    .about-content{
-        height:auto;
-    }
-
-    .about-box h1{
-        font-size:3rem;
-    }
+@media(max-width:768px){
 
     nav{
         flex-direction:column;
+    }
+
+    .about-box h1{
+        font-size:4rem;
+    }
+
+    .about-content{
+        max-height:none;
     }
 }
 
@@ -284,16 +280,16 @@ custom.htmlCustom Cubbie</a>
 
 <div class="about-box">
 
-<h1>Moon, Hook, &amp; Claw™</h1>
+<h1>Moon, Hook, & Claw™</h1>
 
 <div class="about-content">
 
 <p>
-Welcome to Moon, Hook, &amp; Claw™.
+Welcome to Moon, Hook, & Claw™.
 </p>
 
 <p>
-Nestled amongst the Enchanted Evergreens, Moon, Hook, &amp; Claw™ is a small independent creative company dedicated to craftsmanship, storytelling, folklore, fantasy, and community.
+Nestled amongst the Enchanted Evergreens, Moon, Hook, & Claw™ is a small independent creative company dedicated to craftsmanship, storytelling, folklore, fantasy, and community.
 </p>
 
 <p>
