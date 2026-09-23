@@ -1,85 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moon, Hook, & Claw™</title>
+
+<title>Moon, Hook, &amp; Claw™</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet"
+href="https://fonts.googleapis.com">
 
 <style>
+
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  background:#0a0a0a;
-  color:white;
-  font-family:Segoe UI, sans-serif;
-  min-height:100vh;
+    background:#0a0a0a;
+    color:white;
+    font-family:'Cinzel Decorative', serif;
+    min-height:100vh;
 }
+
+/* Background Logo */
 
 .background-emblem{
-  position:fixed;
-  inset:0;
-  background:url('Logo.jpeg') center center no-repeat;
-  background-size:70%;
-  opacity:.20;
-  z-index:-1;
+    position:fixed;
+    inset:0;
+
+    background:url('Logo.jpeg') center center no-repeat;
+
+    background-size:70%;
+
+    opacity:.18;
+
+    z-index:-1;
 }
 
+/* Navigation */
+
 header{
-  padding:25px;
-  text-align:center;
+    padding:25px;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 20px;
-  font-size:1.1rem;
-  font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
-  color:#8B5CF6;
+    color:#8B5CF6;
 }
+
+/* Main Granite Monument */
 
 .hero{
-  min-height:80vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:20px;
+    display:flex;
+    justify-content:center;
+    padding:50px 20px;
 }
 
-h1{
-  font-size:5rem;
-  background:linear-gradient(to right,#6BE675,#8B5CF6);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
+.about-box{
+    width:90%;
+    max-width:900px;
+
+    height:650px;
+
+    padding:25px;
+
+    position:relative;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #9d9d9d,
+        #696969
+    );
+
+    border:3px solid #4a4a4a;
+
+    box-shadow:
+        inset 3px 3px 5px rgba(255,255,255,.22),
+        inset -6px -6px 10px rgba(0,0,0,.55),
+        0 15px 30px rgba(0,0,0,.7);
 }
 
-p{
-  margin-top:20px;
-  font-size:1.2rem;
-  max-width:800px;
+/* Moss Accent */
+
+.about-box::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    border-radius:12px;
+
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(75,120,60,.35),
+        transparent 20%
+    ),
+    radial-gradient(
+        circle at bottom right,
+        rgba(75,120,60,.30),
+        transparent 18%
+    );
+
+    pointer-events:none;
 }
 
-@media(max-width:768px){
-  h1{
-    font-size:3rem;
-  }
+/* Title */
 
-  nav a{
-    display:block;
-    margin:10px 0;
-  }
+.about-box h1{
+    font-family:'Fleur De Leah', cursive;
+
+    font-size:5rem;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #6BE675,
+        #A889FF,
+        #8B5CF6
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
+
+/* Carved Reading Area */
+
+.about-content{
+    height:480px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    background:#252525;
+
+    border-radius:10px;
+
+    box-shadow:
+        inset 6px 6px 10px rgba(0,0,0,.8),
+        inset -2px -2px 4px rgba(255,255,255,.08);
+
+    line-height:1.8;
+}
+
+.about-content p{
+    margin-bottom:20px;
+}
+
+/* Feature Stone Boxes */
+
+.feature-box{
+    width:90%;
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        145deg,
+        #8c8c8c,
+        #5f5f5f
+    );
+
+    border:3px solid #444;
+
+    box-shadow:
+        inset 3px 3px 5px rgba(255,255,255,.2),
+        inset -5px -5px 8px rgba(0,0,0,.5),
+        0 10px 20px rgba(0,0,0,.5);
+
+    text-align:center;
+}
+
+.feature-box h2{
+    margin-bottom:15px;
+}
+
+.feature-box p{
+    margin-bottom:15px;
+}
+
+.feature-box a{
+    color:#A889FF;
+    text-decoration:none;
+}
+
+.feature-box a:hover{
+    color:#6BE675;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    color:#8B5CF6;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .about-box{
+        height:auto;
+    }
+
+    .about-content{
+        height:auto;
+    }
+
+    .about-box h1{
+        font-size:3rem;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+}
+
 </style>
+
 </head>
 
 <body>
@@ -87,20 +269,104 @@ p{
 <div class="background-emblem"></div>
 
 <header>
-  <nav>
-    #Store</a>
-    #Blog</a>
-    #Inventory</a>
-    #Custom Page</a>
-  </nav>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="store.html">Mossy Hollow Mercantile</a>
+blog.htmlWhispering Curiosities</a>
+inventory.htmlInventory</a>
+custom.htmlCustom Cubbie</a>
+</nav>
+
 </header>
 
 <section class="hero">
-  <h1>Moon, Hook, &amp; Claw™</h1>
-  <p>
-    Welcome to Moon, Hook, &amp; Claw™.
-  </p>
+
+<div class="about-box">
+
+<h1>Moon, Hook, &amp; Claw™</h1>
+
+<div class="about-content">
+
+<p>
+Welcome to Moon, Hook, &amp; Claw™.
+</p>
+
+<p>
+Nestled amongst the Enchanted Evergreens, Moon, Hook, &amp; Claw™ is a small independent creative company dedicated to craftsmanship, storytelling, folklore, fantasy, and community.
+</p>
+
+<p>
+Inspired by woodland paths, moonlit clearings, old tales, and curious wonders, we create handmade goods, original creations, small copper works, and custom commissions designed to bring a touch of enchantment into everyday life.
+</p>
+
+<p>
+Though our roots lie among the mountains of North Carolina, our doors stand open to wanderers from every corner of the world. We believe good stories, honest craftsmanship, and a little imagination can bring people together regardless of where they call home.
+</p>
+
+<p>
+Within these woods you'll find handcrafted wares in Mossy Hollow Mercantile, stories and musings in Whispering Curiosities, custom-made creations within the Custom Cubbie, and whatever other wonders may take root beneath the boughs in the years to come.
+</p>
+
+<p>
+Whether you arrive seeking a gift, a tale, a custom creation, or simply a place to linger beside the campfire for a while, we are honored to share our corner of the Evergreens with you.
+</p>
+
+<p>
+So wander freely, tread lightly, and may your journey be filled with curiosity, wonder, and a little bit of moonlight.
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+<div class="feature-box">
+
+<h2>Mossy Hollow Mercantile</h2>
+
+<p>
+Homemade wares where folklore and fantasy meet.
+</p>
+
+<a href="store.html">Enter the Mercantile</a>
+
+</div>
+
+<div class="feature-box">
+
+<h2>Whispering Curiosities</h2>
+
+<p>
+Stories, folklore, company updates, and curious happenings from the Enchanted Evergreens.
+</p>
+
+blog.htmlVisit the Blog</a>
+
+</div>
+
+<div class="feature-box">
+
+<h2>Custom Cubbie</h2>
+
+<p>
+Request a custom creation tailored specifically to your vision.
+</p>
+
+custom.htmlOpen the Cubbie</a>
+
+</div>
+
+<footer>
+
+<a href="index.html">Home</a>
+<a href="store.html">Store</a>
+blog.htmlBlog</a>
+inventory.htmlInventory</a>
+custom.htmlCustom Orders</a>
+
+</footer>
 
 </body>
 </html>
